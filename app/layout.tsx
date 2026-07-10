@@ -3,7 +3,7 @@ import { Geist, Geist_Mono, DM_Sans } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
-
+import HeaderDesktop from "@/components/Header/HeaderDesktop";
 const dmSans = DM_Sans({subsets:['latin'],variable:'--font-sans'})
 
 const fontMono = Geist_Mono({
@@ -23,7 +23,10 @@ export default function RootLayout({
       className={cn("antialiased", fontMono.variable, "font-sans", dmSans.variable)}
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <HeaderDesktop/>
+          {children}
+          </ThemeProvider>
       </body>
     </html>
   )
