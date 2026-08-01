@@ -14,6 +14,9 @@ import l1 from "@/public/l1.jpg"
 import l2 from "@/public/l2.jpg"
 import l3 from "@/public/l3.jpg"
 import l4 from "@/public/l4.jpg"
+import { products } from '@/components/Catalog/Products'
+import CatalogItem from '@/components/Catalog/CatalogItem'
+import Link from "next/link"
 
 const manrope=Manrope({subsets:['cyrillic']})
 export default function Page() {
@@ -45,7 +48,7 @@ export default function Page() {
             <p className="text-base/8">
               Качественный материалы, удобные фасоны <br/> и  яркие эмоции каждый день
             </p>
-            <Button className="w-[180px] h-[45px] text-white text-base">К каталогу {'>'}</Button>
+            <Link href="/catalog/" className="w-[180px] py-[15px] text-white text-xl bg-[#ffc42e] hover:bg-[#fab609] rounded-xl transition duration-200 text-center font-semibold">К каталогу {'>'}</Link>
           </div>
 
           <div>
@@ -64,7 +67,7 @@ export default function Page() {
               <p className="text-xs mt-2">
                 Стиль и комфорт на каждый день
               </p>
-              <Button className="text-xs bg-[#baded2] mt-5 text-[#142125] hover:bg-[#63a58f]">Смотреть</Button>
+              <Link href="/boys/" className="text-xs bg-[#baded2] mt-5 text-[#142125] hover:bg-[#63a58f] text-center py-[10px] rounded-2xl">Смотреть</Link>
             </div>
             <Image src={boy} alt="Boy"/>
           </div>
@@ -77,7 +80,7 @@ export default function Page() {
               <p className="text-xs mt-2">
                 Нежные образы для маленьких модниц
               </p>
-              <Button className="text-xs bg-[#f4c9c3] mt-5 text-[#534c4c] hover:bg-[#d18a81]">Смотреть</Button>
+              <Link href="/girls/" className="text-xs bg-[#f4c9c3] mt-5 text-[#534c4c] hover:bg-[#d18a81] text-center py-[10px] rounded-2xl">Смотреть</Link>
             </div>
             <Image src={girl} alt="Girl"/>
           </div>
@@ -90,7 +93,7 @@ export default function Page() {
               <p className="text-xs mt-2">
                 Самые свежие поступления
               </p>
-              <Button className="text-xs bg-[#fadeb1] mt-5 text-[#393835] hover:bg-[#d0a96b]">Смотреть</Button>
+              <Link href="/new/" className="text-xs bg-[#fadeb1] mt-5 text-[#393835] hover:bg-[#d0a96b] text-center py-[10px] rounded-2xl">Смотреть</Link>
             </div>
             <Image src={_new} alt="New"/>
           </div>
@@ -103,7 +106,7 @@ export default function Page() {
               <p className="text-xs mt-2">
                 Любимые вещи по выгодным ценам
               </p>
-              <Button className="text-xs bg-[#c2e1ed] mt-5 text-[#25333a] hover:bg-[#74bcd9]">Смотреть</Button>
+              <Link href="/catalog/" className="text-xs bg-[#c2e1ed] mt-5 text-[#25333a] hover:bg-[#74bcd9] text-center py-[10px] rounded-2xl">Смотреть</Link>
             </div>
             <Image src={sale} alt="Sale"/>
           </div>
@@ -148,6 +151,12 @@ export default function Page() {
             </div>
           </div>
         
+        </section>
+
+        <section className="mt-3 grid grid-cols-1 lg:grid-cols-4 gap-3">
+            {products.map((product)=>(
+                <CatalogItem key={product.key} product={product}/>
+            ))}
         </section>
       </div>
     </main>

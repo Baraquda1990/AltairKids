@@ -1,8 +1,10 @@
 import {Fredoka,Nunito} from 'next/font/google'
 const fredoka=Fredoka({subsets:['latin']})
 const nunito=Nunito({subsets:['cyrillic']})
+import Link from 'next/link'
 export default function Logo(){
-    return <div className='flex flex-col items-center'>
+    return <Link href="/">
+            <div className='flex flex-col items-center'>
             <h1 className={`${fredoka.className} text-4xl font-semibold`}>
                 <span className='text-[#fcc160]'>Altair</span>
                 <span className='text-[#8ac4d8]'>Kids</span>
@@ -10,5 +12,6 @@ export default function Logo(){
             <p className={`${nunito.className} text-[#5f6162] text-sm`}>
                 Стильная одежда для детей
             </p>
-        </div>
+            </div>
+            </Link>
 }

@@ -23,10 +23,8 @@ export default function RootLayout({
       className={cn("antialiased", fontMono.variable, "font-sans", dmSans.variable)}
     >
       <body>
-        <ThemeProvider>
           <HeaderDesktop/>
           {children}
-          </ThemeProvider>
       </body>
     </html>
   )
