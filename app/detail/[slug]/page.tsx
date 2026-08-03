@@ -2,7 +2,7 @@ import Image from "next/image"
 import { products } from "@/components/Catalog/Products"
 import {Manrope} from 'next/font/google'
 const manrope=Manrope({subsets:['cyrillic']})
-import ButtonWatsApp from "@/components/Catalog/ButtonWatsApp"
+import WatsApp from "@/components/Header/WatsApp"
 
 export default async function detail({params}:{params:Promise<{slug:string}>}){
     const slug=(await params).slug
@@ -29,7 +29,7 @@ export default async function detail({params}:{params:Promise<{slug:string}>}){
                                 </span>
                             </div>
                             <div className="min-w-[300px] my-5">
-                                <ButtonWatsApp/>
+                                <WatsApp buttonText="Подробнее..."/>
                             </div>
                             <div className="mt-8 space-y-6">
                                 <div className="bg-white rounded-xl overflow-hidden">

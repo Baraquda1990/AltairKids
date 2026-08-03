@@ -21,26 +21,26 @@ import Link from "next/link"
 const manrope=Manrope({subsets:['cyrillic']})
 export default function Page() {
   return (
-    <main className="min-h-screen bg-white pb-[60px] lg:pb-0 relative z-10">
+    <main className="min-h-screen bg-white pb-[60px] lg:pb-0 relative">
 
-      <div className="absolute left-0 top-[50px]">
+      <div className="absolute left-0 top-[50px] z-10">
         <Image src={left} alt=""/>
       </div>
-      <div className="absolute left-[36%] top-[80px]">
+      <div className="absolute left-[36%] top-[80px] z-10">
         <Image src={heart} alt=""/>
       </div>
-      <div className="absolute left-[20px] top-[400px]">
+      <div className="absolute left-[20px] top-[400px] z-10">
         <Image src={_4t} alt=""/>
       </div>
-      <div className="absolute right-0 top-[80px]">
+      <div className="absolute right-0 top-[80px] z-10">
         <Image src={right} alt=""/>
       </div>
 
-      <div className={`${manrope.className} max-w-[1260px] mx-auto px-[15px] lg:px-[30px] pt-[10px] lg:pt-[20px] pb-[10px] lg:pb-[20px]`}>
-        <section className="grid grid-cols-[auto_1fr] items-center pt-[20px]">
-          <div className="flex flex-col space-y-5 items-left">
-            <p className="px-5 py-2 bg-[#fcefed] rounded-2xl font-semibold text-sm">
-              Новая коллекция Лето-Осень 2026
+      <div className={`${manrope.className} max-w-[1260px] mx-auto px-[15px] lg:px-[30px] pt-[10px] lg:pt-[20px] pb-[10px] lg:pb-[20px] relative z-40`}>
+        <section className="grid md:grid-cols-[auto_1fr] items-center pt-[20px]">
+          <div className="flex flex-col space-y-5 items-left px-5 md:px-0 ">
+            <p className="px-5 py-2 bg-[#fcefed] rounded-2xl font-semibold text-sm w-[200px] md:w-auto">
+              Новая коллекция <br className="md:hidden"/> Лето-Осень 2026
             </p>
             <h1 className="text-4xl font-extrabold text-[#222222] pb-[15px]">
               Стильная одежда <br/> для ваших детей
@@ -48,7 +48,7 @@ export default function Page() {
             <p className="text-base/8">
               Качественный материалы, удобные фасоны <br/> и  яркие эмоции каждый день
             </p>
-            <Link href="/catalog/" className="w-[180px] py-[15px] text-white text-xl bg-[#ffc42e] hover:bg-[#fab609] rounded-xl transition duration-200 text-center font-semibold">К каталогу {'>'}</Link>
+            <Link href="/catalog/" className="w-full md:w-[180px] py-[15px] text-white text-xl bg-[#ffc42e] hover:bg-[#fab609] rounded-xl transition duration-200 text-center font-semibold">К каталогу {'>'}</Link>
           </div>
 
           <div>
@@ -57,9 +57,9 @@ export default function Page() {
         </section>
 
 
-        <section className="mt-1 grid grid-cols-1 lg:grid-cols-4 gap-3">
+        <section className="mt-1 grid grid-cols-1 md:grid-cols-4 gap-3">
 
-          <div className="flex rounded-xl bg-[#e4f0eb] h-[235px] px-2 py-0 overflow-hidden">
+          <div className="flex rounded-xl bg-[#e4f0eb] h-[235px] px-2 py-0 overflow-hidden justify-evenly">
             <div className="flex flex-col ps-3 mt-[30px]">
               <h3 className="text-base font-semibold">
                 Мальчикам
@@ -72,7 +72,7 @@ export default function Page() {
             <Image src={boy} alt="Boy"/>
           </div>
 
-          <div className="flex rounded-xl bg-[#fbe4e3] h-[235px] px-2 overflow-hidden">
+          <div className="flex rounded-xl bg-[#fbe4e3] h-[235px] px-2 overflow-hidden justify-evenly">
             <div className="flex flex-col ps-3 mt-[30px]">
               <h3 className="text-base font-semibold">
                 Девочкам
@@ -85,7 +85,7 @@ export default function Page() {
             <Image src={girl} alt="Girl"/>
           </div>
 
-          <div className="flex rounded-xl bg-[#fdeed7] h-[235px] px-2 overflow-hidden">
+          <div className="flex rounded-xl bg-[#fdeed7] h-[235px] px-2 overflow-hidden justify-evenly">
             <div className="flex flex-col ps-3 mt-[30px]">
               <h3 className="text-base font-semibold">
                 Новинки
@@ -98,7 +98,7 @@ export default function Page() {
             <Image src={_new} alt="New"/>
           </div>
 
-          <div className="flex rounded-xl bg-[#e6f1f6] h-[235px] px-2 overflow-hidden">
+          <div className="flex rounded-xl bg-[#e6f1f6] h-[235px] px-2 overflow-hidden justify-evenly">
             <div className="flex flex-col ps-3 mt-[30px]">
               <h3 className="text-base font-semibold">
                 Распродажа
@@ -114,7 +114,7 @@ export default function Page() {
         </section>
 
 
-        <section className="mt-5 grid grid-cols-1 lg:grid-cols-4 rounded-2xl shadow-sm px-5 py-5">
+        <section className="mt-5 grid grid-cols-1 md:grid-cols-4 rounded-2xl shadow-sm px-5 py-5">
 
           <div className="flex items-center">
             <Image className="mx-5" src={l1} alt="Натуральные материалы"/>
@@ -124,8 +124,10 @@ export default function Page() {
             </div>
           </div>
           
+          <div className="bg-gray-200 md:hidden w-full h-[2px] my-3"></div>
+
           <div className="flex items-center">
-            <div className="invisible bg-gray-200 lg:visible h-full w-[2px]"></div>
+            <div className="invisible bg-gray-200 md:visible h-full w-[2px]"></div>
             <Image className="mx-5" src={l2} alt="Безопасность"/>
             <div>
               <h4 className="text-sm font-semibold">Безопасность</h4>
@@ -133,17 +135,21 @@ export default function Page() {
             </div>
           </div>
 
+          <div className="bg-gray-200 md:hidden w-full h-[2px] my-3"></div>
+
           <div className="flex items-center">
-            <div className="invisible bg-gray-200 lg:visible h-full w-[2px]"></div>
+            <div className="invisible bg-gray-200 md:visible h-full w-[2px]"></div>
             <Image className="mx-5" src={l3} alt="Доставка"/>
             <div>
               <h4 className="text-sm font-semibold">Быстрая доставка</h4>
               <p className="text-xs text-[#949798] mt-1">Доставка по городу Актобе</p>
             </div>
           </div>
-
+          
+          <div className="bg-gray-200 md:hidden w-full h-[2px] my-3"></div>
+          
           <div className="flex items-center">
-            <div className="invisible bg-gray-200 lg:visible h-full w-[2px]"></div>
+            <div className="invisible bg-gray-200 md:visible h-full w-[2px]"></div>
             <Image className="mx-5" src={l4} alt="Забота о детях"/>
             <div>
               <h4 className="text-sm font-semibold">С заботой о детях</h4>
@@ -153,7 +159,7 @@ export default function Page() {
         
         </section>
 
-        <section className="mt-3 grid grid-cols-1 lg:grid-cols-4 gap-3">
+        <section className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-3">
             {products.map((product)=>(
                 <CatalogItem key={product.key} product={product}/>
             ))}
