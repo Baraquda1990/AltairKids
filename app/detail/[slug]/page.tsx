@@ -13,7 +13,7 @@ export default async function detail({params}:{params:Promise<{slug:string}>}){
     return <main className="min-h-screen bg-white pb-[60px] lg:pb-0 relative z-10">
                 <div className={`${manrope.className} max-w-[1260px] mx-auto px-[15px] lg:px-[30px] pt-[10px] lg:pt-[20px] pb-[10px] lg:pb-[20px]`}>
 
-                <section className="mt-1 grid grid-cols-1 lg:grid-cols-2 gap-3">
+                <section className="mt-1 grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <div className="space-y-3">
                             <Image src={product?.img} alt={product?.imgAlt} className="w-full h-auto rounded-2xl"/>
                         </div>
@@ -28,7 +28,7 @@ export default async function detail({params}:{params:Promise<{slug:string}>}){
                                     {product.price}
                                 </span>
                             </div>
-                            <div className="min-w-[300px] my-5">
+                            <div className="my-5 w-[200px]">
                                 <WatsApp buttonText="Подробнее..."/>
                             </div>
                             <div className="mt-8 space-y-6">

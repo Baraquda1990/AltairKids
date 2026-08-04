@@ -42,13 +42,13 @@ export default function Page() {
             <p className="px-5 py-2 bg-[#fcefed] rounded-2xl font-semibold text-sm w-[200px] md:w-auto">
               Новая коллекция <br className="md:hidden"/> Лето-Осень 2026
             </p>
-            <h1 className="text-4xl font-extrabold text-[#222222] pb-[15px]">
+            <h1 className="text-2xl sm:text-4xl font-extrabold text-[#222222] pb-[15px]">
               Стильная одежда <br/> для ваших детей
             </h1>
-            <p className="text-base/8">
+            <p className="text-sm sm:text-base/8">
               Качественный материалы, удобные фасоны <br/> и  яркие эмоции каждый день
             </p>
-            <Link href="/catalog/" className="w-full md:w-[180px] py-[15px] text-white text-xl bg-[#ffc42e] hover:bg-[#fab609] rounded-xl transition duration-200 text-center font-semibold">К каталогу {'>'}</Link>
+            <Link href="/catalog/" className="w-full md:w-[180px] py-[8px] md:py-[15px] text-white text-xl bg-[#ffc42e] hover:bg-[#fab609] rounded-xl transition duration-200 text-center font-semibold">К каталогу {'>'}</Link>
           </div>
 
           <div>
@@ -159,7 +159,7 @@ export default function Page() {
         
         </section>
 
-        <section className="mt-3 grid grid-cols-1 md:grid-cols-4 gap-3">
+        <section className="mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
             {products.map((product)=>(
                 <CatalogItem key={product.key} product={product}/>
             ))}

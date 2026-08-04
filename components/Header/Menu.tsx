@@ -11,9 +11,9 @@ export default function Menu(){
     {name:'Новинки',href:"/new/"},
     {name:'О нас',href:"/about/"},
     {name:'Контакты',href:"/contacts/"}]
-  return <nav className={`${manrope.className} flex justify-between w-full font-bold text-[#222222] text-base`}>
+  return <nav className={`${manrope.className} flex justify-between w-full font-bold text-[#222222] text-sm xl:text-base`}>
         {itemsMenu.map((item)=>(
-          <Link className="transition duration-300 hover:text-[#FFB648] px-2" href={item.href}>{item.name}</Link>
+          <Link className="transition duration-300 hover:text-[#FFB648] px-1 xl:px-2" href={item.href}>{item.name}</Link>
         ))}
     </nav>
 }
