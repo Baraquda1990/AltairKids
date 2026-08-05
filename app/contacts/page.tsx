@@ -10,6 +10,12 @@ import wtsp from "@/public/wtsp.png"
 import Image from 'next/image'
 import Link from 'next/link'
 
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Контакты",
+  description: "Контакты магазина Altair Kids.",
+};
+
 export default function Page(){
     return <main className="min-h-screen bg-white pb-[60px] lg:pb-0 relative z-10">
                 <div className={`${manrope.className} max-w-[1260px] mx-auto px-[15px] lg:px-[30px] pt-[10px] lg:pt-[20px] pb-[10px] lg:pb-[20px]`}>

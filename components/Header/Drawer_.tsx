@@ -30,7 +30,7 @@ export default function MenuDrawer() {
           </DrawerDescription>
         </DrawerHeader>
         <div className="flex flex-col gap-4 p-4 [&>*]:justefy-items-center 
-                        [&>*]:py-5 [&>*]:px-3 [&>*]:border-1 [&>*]:border-amber-300 
+                        [&>*]:py-2 [&>*]:px-3 [&>*]:border-1 [&>*]:border-amber-300 
                         [&>*]:rounded-xl [&>*:hover]:bg-amber-200 
                         [&>*]:text-lg [&>*]:text-center [&>*]:text-amber-900">
           <a href="/">Главная</a>

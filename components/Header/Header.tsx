@@ -11,7 +11,7 @@ export default function Header(){
             <div className='col-span-2'><Menu/></div>
             <WatsApp buttonText='Напишите нам!'/>
         </header>
-        <header className='lg:hidden w-full grid grid-cols-3 justify-around h-[60px] justify-items-center items-center my-3 mx-5'>
+        <header className='lg:hidden w-full grid grid-cols-3 justify-around h-[60px] justify-items-center items-center my-3 md:mx-5'>
             <MenuDrawer/>
             <Logo/>
             <WatsApp/>

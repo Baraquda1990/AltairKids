@@ -18,6 +18,12 @@ import { products } from '@/components/Catalog/Products'
 import CatalogItem from '@/components/Catalog/CatalogItem'
 import Link from "next/link"
 
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Главная",
+  description: "Главная страница сайта Altair Kids.",
+};
+
 const manrope=Manrope({subsets:['cyrillic']})
 export default function Page() {
   return (

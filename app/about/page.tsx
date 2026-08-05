@@ -6,6 +6,13 @@ import l5 from "@/public/l5.jpg"
 import l6 from "@/public/l6.jpg"
 import l3 from "@/public/l3.jpg"
 import l4 from "@/public/l4.jpg"
+
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "О нас",
+  description: "О магазине Altair Kids.",
+};
+
 export default function Page(){
     return <main className="min-h-screen bg-white pb-[60px] lg:pb-0 relative z-10">
                 <div className={`${manrope.className} max-w-[1260px] mx-auto px-[15px] lg:px-[30px] pt-[10px] lg:pt-[20px] pb-[10px] lg:pb-[20px]`}>

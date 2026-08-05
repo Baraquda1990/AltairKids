@@ -4,6 +4,36 @@ import {Manrope} from 'next/font/google'
 const manrope=Manrope({subsets:['cyrillic']})
 import WatsApp from "@/components/Header/WatsApp"
 
+import type { Metadata } from "next"
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+
+  const product = products.find((p) => p.linkHref === slug);
+
+  if (!product) {
+    return {
+      title: "Товар не найден",
+    };
+  }
+
+  return {
+    title: product.name,
+    description: product.description,
+    alternates: {
+        canonical: `/detail/${product.linkHref}`,
+    },
+    openGraph: {
+      title: product.name,
+      description: product.description,
+      images: [product.img.src],
+    },
+  };
+}
+
 export default async function detail({params}:{params:Promise<{slug:string}>}){
     const slug=(await params).slug
     let product=products.find(item=>item.linkHref===slug)
@@ -33,11 +63,11 @@ export default async function detail({params}:{params:Promise<{slug:string}>}){
                             </div>
                             <div className="mt-8 space-y-6">
                                 <div className="bg-white rounded-xl overflow-hidden">
-                                    <div className="flex items-center gap-3 px-5 pt-5 pb-3">
+                                    <div className="flex items-center gap-3 md:px-5 pt-5 pb-3">
                                         <div className="w-1 h-5 bg-[#aeca73] rounded-full"></div>
                                         <h3 className="font-semibold text-base text-gray-900">Описание</h3>
                                     </div>
-                                    <div className="px-5 pb-5">
+                                    <div className="md:px-5 pb-5">
                                         <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line break-words">
                                             {product.description}
                                         </p>
