@@ -72,6 +72,7 @@ export const metadata: Metadata = {
   },
 };
 
+import YandexMetrika from "@/components/YandexMetrika";
 
 export default function RootLayout({
   children,
@@ -85,6 +86,7 @@ export default function RootLayout({
       className={cn("antialiased", fontMono.variable, "font-sans", dmSans.variable)}
     >
       <body>
+          <YandexMetrika />
           <Header/>
           {children}
       </body>
