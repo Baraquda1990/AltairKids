@@ -1,5 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
+/*import { productsType } from "@/types/productsType"
+type props={
+    product:productsType
+}*/
 import { productType } from "./Products"
 type props={
     product:productType

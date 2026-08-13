@@ -26,7 +26,7 @@ export default function Page(){
 
                             <section className="mt-5 grid grid-cols-1 lg:grid-cols-4 rounded-2xl shadow-sm px-5 py-5 bg-white">
                             <div className="flex lg:flex-col space-y-3 px-3">
-                                <Image className="mx-5" height={30} src={l3} alt="Качество"/>
+                                <Image className="mx-5 w-10 h-10" src={l3} alt="Качество"/>
                                 <div>
                                 <h4 className="text-sm font-semibold">Качество</h4>
                                 <p className="text-xs text-[#949798] mt-1 leading-[20px]">Мы тщательно выбираем ткани и контролируем качество каждого изделия</p>
@@ -36,7 +36,7 @@ export default function Page(){
                             <div className="bg-gray-200 lg:hidden w-full h-[2px] my-3"></div>
 
                             <div className="flex lg:flex-col lg:border-l-2 border-gray-200 space-y-3 px-3">
-                                <Image className="mx-5" height={30} src={l5} alt="Стиль"/>
+                                <Image className="mx-5 w-10 h-10" src={l5} alt="Стиль"/>
                                 <div>
                                 <h4 className="text-sm font-semibold">Стиль</h4>
                                 <p className="text-xs text-[#949798] mt-1 leading-[20px]">Современные модели для детей, которые хотят выглядить стильно</p>
@@ -46,7 +46,7 @@ export default function Page(){
                             <div className="bg-gray-200 lg:hidden w-full h-[2px] my-3"></div>
 
                             <div className="flex lg:flex-col lg:border-l-2 border-gray-200 space-y-3 px-3">
-                                <Image className="mx-5" height={30} src={l4} alt="Забота"/>
+                                <Image className="mx-5 w-10 h-10" src={l4} alt="Забота"/>
                                 <div>
                                 <h4 className="text-sm font-semibold">Забота</h4>
                                 <p className="text-xs text-[#949798] mt-1 leading-[20px]">Мы создаем одежду с любовью и заботой о ваших детях</p>
@@ -56,7 +56,7 @@ export default function Page(){
                             <div className="bg-gray-200 lg:hidden w-full h-[2px] my-3"></div>
 
                             <div className="flex lg:flex-col lg:border-l-2 border-gray-200 space-y-3 px-3">
-                                <Image className="mx-5" height={30} src={l6} alt="Доступность"/>
+                                <Image className="mx-5 w-10 h-10" src={l6} alt="Доступность"/>
                                 <div>
                                 <h4 className="text-sm font-semibold">Доступность</h4>
                                 <p className="text-xs text-[#949798] mt-1 leading-[20px]">Качественная одежда по честным и приятным ценам</p>

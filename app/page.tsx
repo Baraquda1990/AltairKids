@@ -17,15 +17,21 @@ import l4 from "@/public/l4.jpg"
 import { products } from '@/components/Catalog/Products'
 import CatalogItem from '@/components/Catalog/CatalogItem'
 import Link from "next/link"
-
+import getProducts from "@/services/getProducts"
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Главная",
   description: "Главная страница сайта Altair Kids.",
 };
-
 const manrope=Manrope({subsets:['cyrillic']})
 export default function Page() {
+  /*let products=[]
+  try{
+    products=await getProducts()
+    console.log(products)
+  }catch(error){
+    console.error("Ошибка загрузки товаров",error)
+  }*/
   return (
     <main className="min-h-screen bg-white pb-[60px] lg:pb-0 relative">
 
