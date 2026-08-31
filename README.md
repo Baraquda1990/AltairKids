@@ -3,6 +3,14 @@
 Сайт детского бутика **Altair Kids**, разработанный на **Next.js**.
 Сайт представляет каталог товаров, информацию о магазине и способы связи с ним через WhatsApp.
 
+### Скриншоты
+
+<img width="1835" height="923" alt="Снимок экрана от 2026-08-31 09-49-05" src="https://github.com/user-attachments/assets/0517d414-3f02-4f58-b8dd-8b86eb2495dd" />
+
+https://github.com/user-attachments/assets/96dc400e-503c-4e0d-b0a4-441565de8180
+
+https://github.com/user-attachments/assets/28c7d1bc-fa95-4b97-b3c4-9d2a6b66d7a6
+
 ## 🌐 О проекте
 
 Altair Kids — это современный сайт-каталог детской одежды.
@@ -92,8 +100,9 @@ Supabase используется для хранения информации �
 
 Товары хранятся в Supabase.
 
-Пример структуры товара:
+Структура базы:
 
+<img width="981" height="558" alt="Снимок экрана от 2026-08-31 11-51-34" src="https://github.com/user-attachments/assets/41712ecb-24d9-49f6-ad9b-1c7ff5367960" />
 
 
 Frontend получает данные из Supabase и отображает их в каталоге.
