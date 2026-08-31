@@ -79,7 +79,7 @@ Altair Kids — это современный сайт-каталог детск
 
 ### Frontend
 
-* [Next.js](https://nextjs.org/)
+* Next.js
 * React
 * TypeScript
 * Tailwind CSS
