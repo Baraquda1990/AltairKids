@@ -3,6 +3,10 @@
 Сайт детского бутика **Altair Kids**, разработанный на **Next.js**.
 Сайт представляет каталог товаров, информацию о магазине и способы связи с ним через WhatsApp.
 
+## Вебсайт
+
+**Website:** https://altairkids.shop/
+
 ### Скриншоты
 
 <img width="1835" height="923" alt="Снимок экрана от 2026-08-31 09-49-05" src="https://github.com/user-attachments/assets/0517d414-3f02-4f58-b8dd-8b86eb2495dd" />
