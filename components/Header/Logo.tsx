@@ -10,7 +10,7 @@ export default function Logo(){
                 <span className='text-[#8ac4d8]'>Kids</span>
             </h1>
             <p className={`${nunito.className} text-[#5f6162] text-xs sm:text-sm text-center`}>
-                Стильная одежда для детей
+                Стильная одежда для детей в Актобе
             </p>
             </div>
             </Link>

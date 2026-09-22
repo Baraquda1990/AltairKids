@@ -55,7 +55,7 @@ export default function Page() {
               Новая коллекция <br className="md:hidden"/> Лето-Осень 2026
             </p>
             <h1 className="text-2xl sm:text-4xl font-extrabold text-[#222222] pb-[15px]">
-              Стильная одежда <br/> для ваших детей
+              Стильная одежда <br/> для ваших детей<br/>в Актобе
             </h1>
             <p className="text-sm sm:text-base/8">
               Качественный материалы, удобные фасоны <br/> и  яркие эмоции каждый день
