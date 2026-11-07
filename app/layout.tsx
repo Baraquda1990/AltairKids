@@ -85,6 +85,22 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, "font-sans", dmSans.variable)}
     >
+    <head>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtm.js?id=GTM-52PDZ2KZ"
+      />
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `,
+        }}
+      />
+    </head>
       <body>
 
   <Script id="yandex-metrika" strategy="afterInteractive">
